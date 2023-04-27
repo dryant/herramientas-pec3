@@ -1,0 +1,52 @@
+@media (min-width: 781px) {
+    header nav ul li {
+        width: 16%;
+    }
+    .widget {
+        width: 290px;
+    }
+    .widget img {
+        width: 100%;
+        height: 135px;
+    }
+    /*********************************************
+    *          Estilos Categoria
+    **********************************************/
+    
+    .place {
+        width: 100%;
+        display: flex;
+    }
+    .place .left {
+        width: 30%;
+    }
+    .place .rigth {
+        width: 70%;
+        margin-left: 20px;
+    }
+    .place img {
+        width: 100%;
+        height: 170px;
+    }
+    
+    
+    /************* Fin Categoria *************/
+    /*********************************************
+    *          Estilos Enlaces
+    **********************************************/
+    
+    
+    .enlace .left {
+        width: 25%;
+        margin-right: 20px;
+    }
+    .enlace .left img{
+        width: 100%;
+    }
+    .enlace .right {
+        width: 75%;
+    }
+    
+    /************* Fin Enlaces *************/
+    
+}

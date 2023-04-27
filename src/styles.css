@@ -1,0 +1,182 @@
+@import 'reset';
+@import 'laptop';
+@import 'tablet';
+@import 'movil';
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('lobster.ttf');
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins.ttf');
+}
+
+body {
+    height: 100vh;
+    color: #1f1f1f;
+    font-family: 'Open Sans';
+    line-height: 1.6rem;
+}
+main, .container {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+}
+footer {
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+.mainimg {
+    width: 100%;
+}
+footer div.container, header div.container {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: #1f1f1f;
+}
+/*********************************************
+*          Estilos Header
+**********************************************/
+
+header {
+    height: auto;
+    margin-bottom: 30px;
+    padding: 30px 0 0;
+}
+header nav {
+    /* background-color: red; */
+    padding: 15px 0;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li{
+    /* display: flex; */
+    list-style: none;
+    padding: 10px 25px;
+    border: solid 1px black;
+    border-radius: 8px;
+    text-align: center;
+}
+header nav a {
+    text-decoration: none;
+}
+header nav a:visited {
+    color: #1f1f1f;
+}
+header nav ul li:hover {
+    transition-property:all;
+    transition-duration: 0.5s;
+    background-color:rgb(235, 179, 11);
+    font-weight: 700;
+}
+header .container h1 {
+    font-size: 46px;
+    font-family: 'Lobster';
+    margin-bottom: 25px;
+}
+/*********************************************
+*          Estilos Generales
+**********************************************/
+
+.h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+p {
+    margin-bottom: 20px;
+}
+/************* Fin Generales *************/
+/************* Fin Header *************/
+
+/*********************************************
+*          Estilos articulo
+**********************************************/
+
+.excerpt {
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    width: 65%;
+    margin: 15px auto;
+    line-height: 1.6rem;
+}
+.related {
+    display: flex;
+    justify-content: space-between;   
+    margin: 30px auto; 
+}
+.widget {
+    margin-bottom: 35px;
+}
+a div.widget p {
+    text-decoration: none;
+}
+
+.widget img {
+    width: 100%;
+}
+.widget h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+.widget p {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
+.video iframe {
+    width: 90%;
+    aspect-ratio: 16 / 9;
+}
+
+/************* Fin articulo *************/
+/*********************************************
+*          Estilos Categoria
+**********************************************/
+
+.place {
+    margin-bottom: 35px;
+}
+a div.place p {
+    text-decoration: none;
+}
+
+.place .rigth p, .place .rigth .h2 {
+    text-align: left;
+}
+.place h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+.place {
+    border-bottom: #1f1f1f dotted 1px;
+    padding-bottom: 20px;
+}
+.place p {
+    text-align: center;
+}
+
+/************* Fin Categoria *************/
+.enlace {
+    display: flex;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: dotted black 1px;
+}
