@@ -23,22 +23,10 @@ main, .container {
     max-width: 960px;
     margin: auto;
 }
-footer {
-    height: 50px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #1f1f1f;
-    color: #fff;
-    margin-top: 30px;
-    padding-top: 15px;
-}
 .mainimg {
     width: 100%;
 }
-footer div.container, header div.container {
-    text-align: center;
-}
+
 a {
     text-decoration: none;
     color: #1f1f1f;
@@ -53,17 +41,57 @@ a:visited {
 header {
     height: auto;
     margin-bottom: 30px;
-    padding: 30px 0 0;
+    padding: 30px 0 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
 }
-header nav {
+.container.header .logo{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+header img {
+    width: 50px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    display: inline-block;
+}
+header p.subtitle {
+    font-size: 1.6rem;
+    font-weight: 100;
+    letter-spacing: 0.4rem;
+}
+header h1 {
+    letter-spacing: 0.4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom:1.2rem;
+    display: inline-block;
+    font-weight: 700;
+}
+img.mainimg {
+    clip-path: polygon(100% 0, 0 10%, 0 100%, 100% 90%);
+}
+div.divider {
+    height: 1px;
+    border-bottom: dotted grey 1px;
+}
+/************* Fin Header *************/
+
+/*********************************************
+*          Estilos Main
+**********************************************/
+
+main nav {
     /* background-color: red; */
     padding: 15px 0;
 }
-header nav ul {
+main nav ul {
     display: flex;
     justify-content: space-between;
 }
-header nav ul li{
+main nav ul li{
     /* display: flex; */
     list-style: none;
     padding: 10px 25px;
@@ -71,23 +99,29 @@ header nav ul li{
     border-radius: 8px;
     text-align: center;
 }
-header nav a {
+main nav a {
     text-decoration: none;
 }
-header nav a:visited {
+main nav a:visited {
     color: #1f1f1f;
 }
-header nav ul li:hover {
+main nav ul li:hover {
     transition-property:all;
     transition-duration: 0.5s;
     background-color:rgb(235, 179, 11);
     font-weight: 700;
 }
-header .container h1 {
+main .container h1 {
     font-size: 46px;
     font-family: 'Lobster';
     margin-bottom: 25px;
 }
+
+
+/************* Fin Main *************/
+
+
+
 /*********************************************
 *          Estilos Generales
 **********************************************/
@@ -100,7 +134,6 @@ p {
     margin-bottom: 20px;
 }
 /************* Fin Generales *************/
-/************* Fin Header *************/
 
 /*********************************************
 *          Estilos articulo
@@ -145,7 +178,23 @@ a div.widget p {
     width: 90%;
     aspect-ratio: 16 / 9;
 }
+.related {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+div.relart img {
+    clip-path: ellipse(90% 95% at 50% 95%);
+}
+div.relart {
+    -webkit-box-shadow: 0px 11px 16px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 16px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 16px -7px rgba(0,0,0,0.75);
+    border-radius: 8px;
+}
+div.relart p {
+    padding: 8px;
+}
 /************* Fin articulo *************/
 /*********************************************
 *          Estilos Categoria
@@ -196,3 +245,60 @@ div.javascript {
     padding: 12px;
     margin: 20px 0;
 }
+
+
+/*********************************************
+*          Estilos FOOTER
+**********************************************/
+
+footer {
+    /* position: relative; */
+    bottom: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div.container, header div.container {
+    text-align: center;
+}
+footer img {
+    width: 50px;
+}
+footer p {
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+footer div.links nav ul li a {
+    color: #fff;
+}
+footer div.links nav ul li {
+    display: inline;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: auto;
+    margin: 5px;
+}
+@media (max-width: 375px){
+    div.links {
+        width: 300px;
+    }
+}
+footer div.links nav {
+    padding-top: 20px;
+}
+footer div.links nav ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+/************* Fin FOOTER *************/
