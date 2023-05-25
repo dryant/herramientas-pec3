@@ -1,17 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <title>Ceuta, La perla del mediterráneo</title>
     <meta name="description" content="Ceuta, una ciudad española en el norte de África. Conocida como 'La perla del mediterráneo'" >
-    <meta name="keywords" content="Ceuta, Plaza de África, Murallas Reales">    <link rel="stylesheet" href="styles.css" />
+    <meta name="keywords" content="Ceuta, Plaza de África, Murallas Reales">
+    <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
+        <div class="container header">
+            <div class="logo">
+                <img src="../img/CeutaLogoPerla.svg" alt="">
+                <h1>euta</h1>
+            </div>
+            <p class="subtitle">La perla del mediterráneo</p>
+        </div>
+    </header>    
+    <main>
         <div class="container">
-            <h1>Ceuta</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Portada</a></li>
@@ -21,10 +30,14 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
         <article>
-            <img class="mainimg" src="../img/murallas-reales-ceuta.jpg" alt="">
+            <picture>
+                <source media="(max-width: 799px)" srcset="../img/murallas-reales-ceuta-phone.jpg">
+                <source media="(min-width: 800px)" srcset="../img/murallas-reales-ceuta-800.jpg">
+                <img class="mainimg" src="../img/murallas-reales-ceuta.jpg" alt="">
+            </picture>
+            <!-- <img class="mainimg" src="../img/murallas-reales-ceuta-800.jpg" alt="">
+            <img class="mainimg" src="../img/murallas-reales-ceuta-800.jpg" alt=""> -->
             <p>Las Murallas Reales de Ceuta son uno de los monumentos más emblemáticos de esta ciudad autónoma española situada en el norte de África. Construidas entre los siglos XVII y XVIII, estas murallas se extienden a lo largo de varios kilómetros y cuentan con impresionantes fortificaciones que protegían la ciudad de los ataques enemigos. En este artículo exploraremos en detalle las características y la historia de las Murallas Reales de Ceuta.</p>
             <h2 class="h2">Historia de las Murallas Reales de Ceuta</h2>
             <p>La construcción de las Murallas Reales de Ceuta comenzó en el año 1667 durante el reinado de Carlos II, con el objetivo de proteger la ciudad de los ataques de los piratas y las fuerzas enemigas. Las murallas se construyeron sobre los restos de fortificaciones anteriores, incluyendo las murallas romanas y las murallas medievales.</p>
@@ -61,7 +74,18 @@
         </article>
     </main>
     <footer>
-        <div class="container">Pedro Blanch Bejarano</div>
+        <img src="../img/CeutaLogoPerla.svg" alt="">
+        <div class="links">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li><a href="presentacion.html">Presentacion</a></li>
+                    <li><a href="categoria.html">Categoria</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="container">Pedro Blanch Bejarano</p>
     </footer>
 </body>
 </html>
