@@ -181,7 +181,7 @@ article img:first-of-type {
     margin: 30px auto; 
 }
 .widget {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 a div.widget p {
     text-decoration: none;
@@ -198,7 +198,13 @@ a div.widget p {
 .widget p {
     text-align: center;
 }
-
+.relacionado {
+    width: 220px;
+}
+.relacionado .widget img {
+    height: 120px;
+    margin-bottom: 0;
+}
 .video {
     text-align: center;
 }
