@@ -323,8 +323,10 @@ div.javascript {
 }
 
 .enlaces .enlace img{
-    width: 280px;
+    /* width: 280px; */
     margin-right: 20px;
+    display: block;
+    margin: auto;
 }
 .enlace .rigth{
     max-width: 90%;
@@ -351,7 +353,6 @@ div.javascript {
     }
     .enlace .left {
         max-width: 90%;
-        display: block;
         margin: auto;
     }
 }

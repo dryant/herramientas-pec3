@@ -69,6 +69,11 @@
     .enlace .rigth {
         width: 55%;
     }
+    .enlace .left, .enlace .rigth {
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
     
     /************* Fin Enlaces *************/
 }

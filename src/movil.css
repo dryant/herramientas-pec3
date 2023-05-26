@@ -70,6 +70,12 @@
     .enlace .rigth p {
         display: none;
     }
-    
+    @media (max-width:800px) {
+        .enlace .left, .enlace .rigth {
+            width: 95%;
+            display: block;
+            margin: auto;
+        }
+    }
     /************* Fin Enlaces *************/
 }
