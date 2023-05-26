@@ -292,12 +292,7 @@ a div.place p {
 }
 
 /************* Fin Categoria *************/
-.enlace {
-    display: flex;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: dotted black 1px;
-}
+
 div.javascriptCode {
     display: flex;
     flex-wrap: nowrap;
@@ -317,15 +312,22 @@ div.javascript {
 /*********************************************
 *          Estilos ENLACES
 **********************************************/
+.enlace {
+    display: flex;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: dotted black 1px;
+    position: relative;
+    animation: slide 0.3s linear infinite;
+    animation-iteration-count: 1;
+}
 
 .enlaces .enlace img{
     width: 280px;
     margin-right: 20px;
 }
-.enlace {
-    position: relative;
-    animation: slide 0.3s linear infinite;
-    animation-iteration-count: 1;
+.enlace .rigth{
+    max-width: 90%;
 }
 
 @keyframes slide {
@@ -336,7 +338,28 @@ div.javascript {
         left: 0; 
     }
 }
-
+@media (max-width: 600px){
+    .enlace {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    
+    }
+    .rigth {
+        max-width: 90%;
+        text-align: center;
+    }
+    .enlace .left {
+        max-width: 90%;
+        display: block;
+        margin: auto;
+    }
+}
+@media (max-width: 800px) AND (min-width:601px) {
+    .enlace img {
+        max-width: 200px;
+    }
+}
 
 /************* Fin ENLACES *************/
 
