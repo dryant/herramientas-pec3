@@ -4,12 +4,15 @@
   "browserslist": "> 40%, last 35 versions, not dead",
   "version": "1.0.0",
   "description": "",
+  "homepage": "http://dryant.github.io/herramientas-pec3",
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "build": "npm-run-all clean parcel:build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Pedro Blanch <pblanchb@uoc.edu>",
